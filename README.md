@@ -1,5 +1,10 @@
-# IBM HR Analytics Employee Attrition & Performance - EDA Project
+# HR Analytics - Employee Attrition: Project Overview
 *Data is provided by IBM and is fictitious*
+
+- Created an Extreme Gradient Boosting model using SMOTE to predict if an employee would leave the company (Recall: 0.78, Accuracy: 0.86).
+- Compared output to XGB model without SMOTE (Recall: 0.27, Accuracy: 0.88).
+- Identified Stock Option Level 2, Job Level 1, Business Travel - Non-Travel, and Job Involvement 4 as most important factors.
+- Recommended mitigation strategies for each factor (detailed below).
 
 ## Code and Resources Used
 **Python Version:** 3.7 \
@@ -27,7 +32,11 @@ The four most important factors in determining if an employee will leave the com
 **JobInvolvement_4** - About 10% of employees report a Job Involvement of 4 with the majority of employees reporting a 3. It may be the case that those employees with the most job involvement feel overworked or feel more pressure to deliver. I would recommend the company investigate what factors contribute to an employee reporting high levels of job involvement. This could illuminate negative aspects of their role and the company could try to mitigate them.
 
 ## EDA Findings
-*placeholder*
+- **Income:** Lower earners are more likely to leave the company
+- **Work Environement:** Lower environment satisfaction leads to a higher likelihood of attrition. Approximately 1/3 of employees that work OT leave the company.
+- **Education:** Education seemingly played no role in an employee's decision to leave the company.
+- **Work Experience:** More inexperienced employees are more likely to leave the company. Lesser tenured employees are more likely to leave the company. Employees newer to their roles are more likely to leave the company.
+- **Job Performance:** Evaluating job performance was dropped from the analysis after realizing the dataset only contained "Excellent" and "Outstanding" employees
 
 ## Predictive Analysis
 *placeholder*
