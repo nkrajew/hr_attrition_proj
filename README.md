@@ -13,7 +13,7 @@
 **Model Inspiration:** https://www.kaggle.com/vincentlugat/ibm-attrition-analysis-and-prediction/notebook
 
 ## Data Source
-Kaggle - https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset
+Kaggle - https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset \
 The dataset is provided by IBM and is fictitious.
 
 ## Summary
