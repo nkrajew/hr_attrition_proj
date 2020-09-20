@@ -1,5 +1,5 @@
 # HR Analytics - Employee Attrition: Project Overview
-*Data is provided by IBM and is fictitious*
+*Disclaimer: Data is fictitious*
 
 - Created an Extreme Gradient Boosting model using SMOTE to predict if an employee would leave the company (Recall: 0.78, Accuracy: 0.86).
 - Compared output to XGB model without SMOTE (Recall: 0.27, Accuracy: 0.88).
@@ -14,6 +14,7 @@
 
 ## Data Source
 Kaggle - https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset
+The dataset is provided by IBM and is fictitious.
 
 ## Summary
 The four most important factors in determining if an employee will leave the company or not are as follows:
