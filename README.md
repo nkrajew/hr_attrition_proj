@@ -1,9 +1,9 @@
 # HR Analytics - Employee Attrition: Project Overview
 *Disclaimer: Data is fictitious*
 
-- Created an Extreme Gradient Boosting model using SMOTE to predict if an employee would leave the company (Recall: 0.78, Accuracy: 0.86).
-- Compared output to XGB model without SMOTE (Recall: 0.27, Accuracy: 0.88).
-- Identified Stock Option Level 2, Job Level 1, Business Travel - Non-Travel, and Job Involvement 4 as most important factors.
+- Created an Extreme Gradient Boosting model using SMOTE to predict if an employee would leave the company (Recall: 0.77, Accuracy: 0.88).
+- Compared output to XGB model without SMOTE (Recall: 0.31, Accuracy: 0.86).
+- Identified Job Role - Healthcare Rep, Job Level 1, Job Involvement 4, and Business Travel - Non-Travel as most important factors.
 - Recommended mitigation strategies for each factor (detailed below).
 
 ## Code and Resources Used
@@ -18,19 +18,19 @@ The dataset is provided by IBM and is fictitious.
 
 ## Summary
 The four most important factors in determining if an employee will leave the company or not are as follows:
-1. StockOptionLevel = 2
+1. JobRole = Healthcare Representative
 2. JobLevel = 1
-3. BusinessTravel = Non-Travel
-4. JobInvolvement = 4
+3. JobInvolvement = 4
+4. BusinessTravel = Non-Travel
 
 ### Recommendations
-**Stock Option Level 2** - To mitigate losing employees receiving Stock Option Level 2, the company should explore expanding the number of recipients of Stock Level Option 3 and/or creating an intermediary Stock Option Level between 2 and 3. This would allow the company to increase those employees' benefits that are most likely to leave thus retaining their talents.
+**JobRole_Healthcare Representative** - I would recommend that HR investigate the working conditions for this job role. Some possible areas to explore would be how the role compares to others in similar industries, what the leadership is like for these employees, and how the expectations of the role are presented during the hiring process.
 
 **JobLevel_1** - I would recommend exploring ways to make employees feel more connected to the company. This could lead to a larger HR exercise in creating a more collaborative and immersive company culture, creating more job levels to instill a sense of career progression, or creating a clearly defined way to progress within the company (e.g. how healthcare workers have a clinical ladder).
 
-**Business Travel - NonTravel** - My hunch is that the location of this node on the decision tree decides its impactfulness (i.e. the importance of non-travel is very path specific within the tree). Until further investigation can be done, I would recommend the company ignore focusing on this feature. More details are given in the Predictive Analysis notebook.
-
 **JobInvolvement_4** - About 10% of employees report a Job Involvement of 4 with the majority of employees reporting a 3. It may be the case that those employees with the most job involvement feel overworked or feel more pressure to deliver. I would recommend the company investigate what factors contribute to an employee reporting high levels of job involvement. This could illuminate negative aspects of their role and the company could try to mitigate them.
+
+**Business Travel - NonTravel** - My hunch is that the location of this node on the decision tree decides its impactfulness (i.e. the importance of non-travel is very path specific within the tree). Until further investigation can be done, I would recommend the company ignore focusing on this feature. More details are given in the Predictive Analysis notebook.
 
 ## EDA Findings
 - **Income:** Lower earners are more likely to leave the company
@@ -62,7 +62,7 @@ I created five new variables that I thought could be helpful in predicting an em
 My primary evaluation was done on Recall and the AUC of the precision-recall curve (reason explained in notebook).
 | Recall | Precision | F1   | Accuracy | AUC  |
 |--------|-----------|------|----------|------|
-| 0.27   | 0.59      | 0.37 | 0.88     | 0.47 |
+| 0.31   | 0.47      | 0.38 | 0.86     | 0.42 |
 
 ![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_curve.PNG "XGB Curve")
 
@@ -74,7 +74,7 @@ Since I was dealing with an imblanced dataset, I needed a way to "balance" out t
 My primary evaluation was done on Recall and the AUC of the precision-recall curve (reason explained in notebook).
 | Recall | Precision | F1   | Accuracy | AUC  |
 |--------|-----------|------|----------|------|
-| 0.78   | 0.82      | 0.80 | 0.86     | 0.89 |
+| 0.77   | 0.85      | 0.81 | 0.88     | 0.89 |
 
 ![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_smote_curve.PNG "SMOTE Curve")
 
