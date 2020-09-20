@@ -39,5 +39,9 @@ The four most important factors in determining if an employee will leave the com
 - **Work Experience:** More inexperienced employees are more likely to leave the company. Lesser tenured employees are more likely to leave the company. Employees newer to their roles are more likely to leave the company.
 - **Job Performance:** Evaluating job performance was dropped from the analysis after realizing the dataset only contained "Excellent" and "Outstanding" employees
 
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/inc_attrit.PNG "Income and Attrition")
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/env_sat.PNG "Environment and Attrition")
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/attrit_by_tenure.PNG "Tenure and Attrition")
+
 ## Predictive Analysis
 *placeholder*
