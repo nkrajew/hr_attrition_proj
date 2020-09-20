@@ -24,7 +24,7 @@ The four most important factors in determining if an employee will leave the com
 4. JobInvolvement = 4
 
 ### Recommendations
-**Stock Option Level 2** - To mitigate losing this type of talent, the company should explore expanding the number of recipients of Stock Level Option 3 and/or creating an intermediary Stock Option Level between 2 and 3. This would allow the company to increase those employees' benefits that are most likely to leave thus retaining their talents.
+**Stock Option Level 2** - To mitigate losing employees receiving Stock Option Level 2, the company should explore expanding the number of recipients of Stock Level Option 3 and/or creating an intermediary Stock Option Level between 2 and 3. This would allow the company to increase those employees' benefits that are most likely to leave thus retaining their talents.
 
 **JobLevel_1** - I would recommend exploring ways to make employees feel more connected to the company. This could lead to a larger HR exercise in creating a more collaborative and immersive company culture, creating more job levels to instill a sense of career progression, or creating a clearly defined way to progress within the company (e.g. how healthcare workers have a clinical ladder).
 
