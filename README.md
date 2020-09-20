@@ -46,7 +46,7 @@ The four most important factors in determining if an employee will leave the com
 ## Predictive Analysis
 ### Target Variable
 Upon investgation of the target variable, I found I was dealing with an imbalanced dataset.
-*placeholder for image*
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/imbalanced.PNG "Imbalanced Target")
 
 ### Feature Engineering
 I created five new variables that I thought could be helpful in predicting an employees likelihood to leave:
