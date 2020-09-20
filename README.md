@@ -44,4 +44,38 @@ The four most important factors in determining if an employee will leave the com
 ![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/attrit_by_tenure.PNG "Tenure and Attrition")
 
 ## Predictive Analysis
-*placeholder*
+### Target Variable
+Upon investgation of the target variable, I found I was dealing with an imbalanced dataset.
+*placeholder for image*
+
+### Feature Engineering
+I created five new variables that I thought could be helpful in predicting an employees likelihood to leave:
+- **LonDis (Long Distance):** An employee comutes 10 miles or more
+- **ColDeg (College Degree):** An employee has obtained a college degree
+- **LowIncLowJS (Low Income, Low Job Satisfaction):** An employee is being paid less than the median for his role and has job satisfaction of 1
+- **Loyalty:** Total working years divided by number companies worked for (higher number means more loyal)
+- **CompLoyalty (Loyalty to this Company):** Total years at company divided by total number of working years (best is 1)
+
+### Models and Performance
+**1. XGB Model on Imbalanced Dataset**
+#### Performance
+My primary evaluation was done on Recall and the AUC of the precision-recall curve (reason explained in notebook).
+| Recall | Precision | F1   | Accuracy | AUC  |
+|--------|-----------|------|----------|------|
+| 0.27   | 0.59      | 0.37 | 0.88     | 0.47 |
+
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_curve.PNG "XGB Curve")
+
+**2. XGB Model with SMOTE**
+#### Performance
+My primary evaluation was done on Recall and the AUC of the precision-recall curve (reason explained in notebook).
+| Recall | Precision | F1   | Accuracy | AUC  |
+|--------|-----------|------|----------|------|
+| 0.78   | 0.82      | 0.80 | 0.86     | 0.89 |
+
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_smote_curve.PNG "SMOTE Curve")
+
+### Conclusions
+The XGB model using SMOTE performed much better than the model trained on an imblanaced dataset. I used the feature_importances_ property of the XGB model to develop recommendations for the company.
+
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_fi_smote.PNG "FI SMOTE")
