@@ -67,6 +67,9 @@ My primary evaluation was done on Recall and the AUC of the precision-recall cur
 ![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_curve.PNG "XGB Curve")
 
 **2. XGB Model with SMOTE**
+### Brief SMOTE Explanation
+Since I was dealing with an imblanced dataset, I needed a way to "balance" out the target distribution. Doing some research I found that SMOTE was a popular and powerful way to do this. Essentially what SMOTE does is oversample the minority target ("Yes" for Attrition) by synthesizing new samples. I paired this together with an undersampling of the majority target to create a new blended dataset with a ratio of 1:2 for Yes-to-No of the target.  
+
 #### Performance
 My primary evaluation was done on Recall and the AUC of the precision-recall curve (reason explained in notebook).
 | Recall | Precision | F1   | Accuracy | AUC  |
