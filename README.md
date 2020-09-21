@@ -64,7 +64,7 @@ My primary evaluation was done on Recall and the AUC of the precision-recall cur
 |--------|-----------|------|----------|------|
 | 0.31   | 0.47      | 0.38 | 0.86     | 0.42 |
 
-![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_curve.PNG "XGB Curve")
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/curve_xgb.PNG "XGB Curve")
 
 **2. XGB Model with SMOTE**
 #### Brief SMOTE Explanation
@@ -76,9 +76,9 @@ My primary evaluation was done on Recall and the AUC of the precision-recall cur
 |--------|-----------|------|----------|------|
 | 0.77   | 0.85      | 0.81 | 0.88     | 0.89 |
 
-![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_smote_curve.PNG "SMOTE Curve")
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/curve_smote_xgb.PNG "SMOTE Curve")
 
 ### Conclusions
 The XGB model using SMOTE performed much better than the model trained on an imblanaced dataset. I used the feature_importances_ property of the XGB model to develop recommendations for the company.
 
-![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_fi_smote.PNG "FI SMOTE")
+![alt text](https://github.com/nkrajew/hr_attrition_proj/blob/master/xgb_fi_graph.PNG "FI SMOTE")
